@@ -402,6 +402,7 @@ Review the input parameters that you can specify for your resource.
 |`name`|String|Required|The name of the network ACL.|
 |`vpc`|String|Required|The VPC ID. This parameter is note required if you want to create a network ACL for a Gen 1 VPC.|
 |`rules`|List of rules|Optional|A list of rules for a network ACL. The order in which the rules are added to the list determines the priority of the rules. For example, the first rule that you want to enforce must be specified as the first rule in this list. |
+|`resource_group`|String|Optional|The resource group ID where the ACL should to be created.|
 |`rules.name`|String|Required|The user-defined name for this rule.|
 |`rules.action`|String|Required|`Allow` or `deny` matching network traffic. |
 |`rules.source`|String|Required|The source IP address or CIDR block.|
